@@ -54,6 +54,7 @@ p {
   font-family: 'Palanquin', sans-serif;
   font-size: 2rem;
   line-height: 1.5rem;
+  color: #ffff;
 
   margin-bottom: 6rem;
 }
@@ -115,5 +116,50 @@ p {
   100% {
     opacity: 1;
     transform: translateX(0);
+  }
+}
+
+@media (min-width: 700px) {
+  :root {
+    font-size: 62.5%; /* 10% rem */
+  }
+
+  #page {
+    display: flex;
+  }
+
+  header {
+    max-width: 37rem;
+  }
+
+  p {
+  margin-top: 3.2rem;
+  padding: 0 4rem;
+  font-size: 2.4rem;
+  line-height: 2rem;
+  }
+
+  main {
+    width: 100%;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 3.2rem;
+  }
+
+  footer {
+    font-size: 1.4rem;
+    color: #4A4E69;
+    font-family: 'Open Sans';
+    line-height: 2.8rem;
+
+    position: absolute;
+    text-align: center;
+    Left: 56rem;
+    top: 103rem;
+  }
+
+  footer span {
+    font-weight: bold;
   }
 }
